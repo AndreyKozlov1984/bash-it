@@ -14,6 +14,11 @@ fi
 #That doesn't work with rvm (:
 [[ $- == *i* ]] || return
 
+#fix locale
+export LANG="en_US.utf8"
+export LANGUAGE="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
 # Path to the bash it configuration
 export BASH_IT=$HOME/.bash_it
 
